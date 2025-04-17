@@ -71,13 +71,4 @@ Can a country’s socio-economic and environmental indicators serve as reliable 
 - **Healthcare and sustainability** (PHDI, CO₂ emissions) showed moderate influence.
 - Clustered countries reflect disparities in development and performance.
 
----
-
-## 🛠️ Tech Stack
-
-- **Languages**: Python
-- **Libraries**: Pandas, NumPy, Scikit-learn, LightGBM, XGBoost, CatBoost, Seaborn, Matplotlib
-- **Tools**: Jupyter Notebook, Google Colab
-
----
 
