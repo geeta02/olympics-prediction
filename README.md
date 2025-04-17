@@ -1,16 +1,16 @@
-# 🏅 Predicting Olympic Medal Performance Using Socio-Economic Indicators
+#  Predicting Olympic Medal Performance Using Socio-Economic Indicators
 
 This project explores how socio-economic and environmental indicators impact a country's performance at the Summer Olympics. By applying machine learning techniques, we developed a predictive model to estimate Olympic medal counts using publicly available development metrics.
 
 ---
 
-## 🎯 Problem Statement
+##  Problem Statement
 
 Can a country’s socio-economic and environmental indicators serve as reliable predictors of its Olympic medal performance?
 
 ---
 
-## 📌 Key Objectives
+##  Key Objectives
 
 - Merge diverse datasets (Olympic records, GDP, HDI, healthcare indicators).
 - Identify key features influencing Olympic performance.
@@ -19,15 +19,15 @@ Can a country’s socio-economic and environmental indicators serve as reliable 
 
 ---
 
-## 🧱 Project Pipeline
+##  Project Pipeline
 
-### 1️⃣ Data Acquisition
+###  Data Acquisition
 - **Olympic Medal Data**: Gigasheet
 - **Socio-Economic Data**: World Bank (GDP), UNDP (HDI, MYS, EYS, Life Expectancy)
 - **Health Metrics**: NCD-RisC (BMI, Blood Pressure, Cholesterol, Diabetes)
 - **Environmental Indicators**: CO₂ emissions, Maternal Mortality Rate (MMR)
 
-### 2️⃣ Data Preprocessing
+###  Data Preprocessing
 - ISO country code matching for dataset consistency.
 - Imputation of missing values using mean/median strategies.
 - Created new features: 
@@ -35,16 +35,16 @@ Can a country’s socio-economic and environmental indicators serve as reliable 
   - `Medals per GDP`, `Medals per Capita`
 - Robust Scaling and normalization to handle skewness and outliers.
 
-### 3️⃣ Exploratory Data Analysis (EDA)
+###  Exploratory Data Analysis (EDA)
 - Statistical summaries & correlation heatmaps.
 - Cluster profiles based on socio-economic groupings.
 - Visual trends for features like GDP, height, and health vs. medal counts.
 
-### 4️⃣ Feature Engineering
+###  Feature Engineering
 - PCA analysis to identify dominant features.
 - SHAP & feature importance to interpret ML predictions.
 
-### 5️⃣ Machine Learning Models
+###  Machine Learning Models
 | Model            | R² Score | RMSE   |
 |------------------|----------|--------|
 | LightGBM         | **0.895** | 25.95  |
@@ -54,9 +54,9 @@ Can a country’s socio-economic and environmental indicators serve as reliable 
 | Random Forest    | 0.530    | 55.14  |
 | Neural Networks  | 0.143    | 35.60  |
 
-**🔍 Best Model:** LightGBM — Explains 89.5% of the variance in Olympic performance.
+**Best Model:** LightGBM — Explains 89.5% of the variance in Olympic performance.
 
-### 6️⃣ Clustering
+###  Clustering
 - Applied **K-Means** and **Agglomerative Clustering** (best silhouette score for K=3).
 - Clustered countries into:
   - High performers (high HDI, medals, GDP)
@@ -65,7 +65,7 @@ Can a country’s socio-economic and environmental indicators serve as reliable 
 
 ---
 
-## 📊 Key Insights
+##  Key Insights
 
 - **Education** (Mean & Expected Years of Schooling) > **GDP** in predicting Olympic success.
 - **Healthcare and sustainability** (PHDI, CO₂ emissions) showed moderate influence.
